@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context="co.casterlabs.brahma.ConferenceActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="8dp"
+        android:transitionName="@string/toolbar"
+        android:minHeight="56dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/droidcon_bugdroid"
+                android:alpha="0.2"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/textColorPrimary"
+                android:text="Ground Floor"
+                android:id="@+id/headline"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:paddingLeft="16dp"
+                android:paddingBottom="16dp"
+                android:paddingRight="16dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <co.casterlabs.brahma.ScaleImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/ground" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="20sp"
+        android:text="@string/swiperight"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp" />
+
+
+</LinearLayout>
+
